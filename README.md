@@ -1,24 +1,38 @@
-# Red Hat Universal Nav
+# \<rh-universal-nav\>
 
-A universal nav web component.
+A universal navigation web component for all Red Hat web properties
 
-Browser Support:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- IE11
+## Install the Polymer-CLI
 
-## Getting Started
+First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
+
+## Viewing Your Application
+
 ```
-npm install && bower install
+$ polymer serve
 ```
 
-## Development
-```
-npm run dev
-```
-This will use babel to compile the src/ directory and copy to the lib/ directory. Open index.html in the browser and you should be good to go.
+## Building Your Application
 
-## About
+```
+$ polymer build
+```
 
-This uses the [webcomponentsjs polyfill](http://webcomponents.org/) to create a cross-browser universal navigation web component. It uses the web component v0 spec and will need to be updated to the v1 spec when it's more widely supported.
+This will create a `build/` folder with `bundled/` and `unbundled/` sub-folders
+containing a bundled (Vulcanized) and unbundled builds, both run through HTML,
+CSS, and JS optimizers.
+
+You can serve the built versions by giving `polymer serve` a folder to serve
+from:
+
+```
+$ polymer serve build/bundled
+```
+
+## Running Tests
+
+```
+$ polymer test
+```
+
+Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.

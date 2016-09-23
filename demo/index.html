@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>rh-universal-nav demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+
+    <link rel="import" href="../rh-universal-nav.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+    </style>
+  </head>
+  <body>
+
+    <div class="vertical-section-container centered">
+      <h3>Basic rh-universal-nav Demo</h3>
+      <demo-snippet>
+        <template>
+          <rh-universal-nav form-url="https://access.redhat.com/search">
+            <ul rhwc-aux-nav>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Open Source</a></li>
+            </ul>
+            <div rhwc-search-tray>
+              This is the search tray
+            </div>
+            <div rhwc-login-tray>
+              This is the login tray
+            </div>
+            <div rhwc-lang-tray>
+              This is the lang tray
+            </div>
+          </rh-universal-nav>
+        </template>
+      </demo-snippet>
+    </div>
+
+  </body>
+</html>

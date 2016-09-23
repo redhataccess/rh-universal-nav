@@ -1,0 +1,20 @@
+{
+  "name": "rh-universal-nav",
+  "main": "rh-universal-nav.js",
+  "homepage": "https://github.com/redhataccess/rh-universal-nav",
+  "authors": [
+    "Kyle Buchanan <kylebuch8@gmail.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "^0.7.22"
+  }
+}

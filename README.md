@@ -2,10 +2,22 @@
 
 A universal nav web component.
 
+Browser Support:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- IE11
+
 ## Getting Started
 ```
-bower install
+npm install && bower install
 ```
+
+## Development
+```
+npm run dev
+```
+This will use babel to compile the src/ directory and copy to the lib/ directory. Open index.html in the browser and you should be good to go.
 
 ## About
 

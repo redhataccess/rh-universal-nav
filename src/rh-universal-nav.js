@@ -1,13 +1,16 @@
 (function () {
   class RhUniversalNav extends HTMLElement {
+
     createdCallback() {
-      var shadowRoot = this.createShadowRoot();
+      const shadowRoot = this.createShadowRoot();
       shadowRoot.innerHTML = `
         <content select="[rhwc-aux-nav]"></content>
         <form class="rhwc-search">
           <div data-name="web-icon-search" class="icons__item">
             <i class="web-icon-search"></i> web-icon-search
             <span class="icons__tag">tags:magnifying, glass, look</span>
+            <input type="text">
+            <button>Submit</button>
           </div>
         </form>
         <content select="[rhwc-search-tray]"></content>
@@ -22,6 +25,13 @@
         </div>
         <content name="[rhwc-lang-tray]"></content>
       `;
+
+      this.addEventListener('submit', this.submitHandler);
+    }
+
+    submitHandler(evt) {
+      evt.preventDefault();
+      console.log('event', this.getAttribute('form-url'));
     }
   };
 

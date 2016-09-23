@@ -1,0 +1,25 @@
+{
+  "name": "rh-universal-nav",
+  "version": "1.0.0",
+  "description": "A universal nav web component.",
+  "main": "rh-universal-nav.js",
+  "scripts": {
+    "build": "npm run compile",
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "dev": "babel --watch --presets es2015 -d lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redhataccess/rh-universal-nav.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redhataccess/rh-universal-nav/issues"
+  },
+  "homepage": "https://github.com/redhataccess/rh-universal-nav#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0"
+  }
+}

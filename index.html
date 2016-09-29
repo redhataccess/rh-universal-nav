@@ -6,23 +6,47 @@
     <title>Red Hat Universal Nav</title>
     <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
     <link rel="import" href="rh-universal-nav.html">
+
+    <style>
+      section {
+        margin-bottom: 64px;
+      }
+    </style>
   </head>
   <body>
-    <rh-universal-nav form-url="https://access.redhat.com/search">
-      <ul rhwc-aux-nav>
-        <li><a href="#">Customers</a></li>
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Open Source</a></li>
-      </ul>
-      <div rhwc-search-tray>
-        This is the search tray
-      </div>
-      <div rhwc-login-tray>
-        This is the login tray
-      </div>
-      <div rhwc-lang-tray>
-        This is the lang tray
-      </div>
-    </rh-universal-nav>
+    <section>
+      <p><strong>With Supplied Navigation</strong></p>
+      <rh-universal-nav form-url="https://access.redhat.com/search">
+        <ul rhwc-aux-nav>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Open Source</a></li>
+        </ul>
+        <div rhwc-search-tray>
+          This is the search tray
+        </div>
+        <div rhwc-login-tray>
+          This is the login tray
+        </div>
+        <div rhwc-lang-tray>
+          This is the lang tray
+        </div>
+      </rh-universal-nav>
+    </section>
+
+    <section>
+      <p><strong>Without a Navigation Supplied</strong></p>
+      <rh-universal-nav form-url="https://access.redhat.com/search">
+        <div rhwc-search-tray>
+          This is the search tray
+        </div>
+        <div rhwc-login-tray>
+          This is the login tray
+        </div>
+        <div rhwc-lang-tray>
+          This is the lang tray
+        </div>
+      </rh-universal-nav>
+    </section>
   </body>
 </html>
